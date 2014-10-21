@@ -3,19 +3,19 @@
 ## Reparto del contenido
 
 ### Tema 1 - Introducción: conceptos generales, instalación, mi primer programa
-#### Ángel Pablo Hinojosa
+Ángel Pablo Hinojosa
 
 ### Tema 2 - Manejo de datos
-#### Serafín Vélez
+Serafín Vélez
 
 ### Tema 3 - Control y movimiento. Multimedia
-#### Ángel Pablo Hinojosa
+Ángel Pablo Hinojosa
 
 ### Tema 4 - Arte interactivo. Minijuegos. Videojuegos
-#### Serafín Vélez
+Serafín Vélez
 
 ### Tema 5 - Aspectos avanzados de Scratch
-#### Serafín Vélez
+Serafín Vélez
 
 ### Proyecto Final
-#### Ángel Pablo Hinojosa
+Ángel Pablo Hinojosa
