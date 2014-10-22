@@ -4,7 +4,7 @@ mkdir -p html # It creates the directory if it does not exist
 
 for fichero in $( ls *.md)
 do
-    #echo ${fichero}
+    echo ${fichero}
     pandoc -f markdown -t html -o html/${fichero} ${fichero}
     mv "html/$fichero" "html/${fichero%.md}.html"
 done

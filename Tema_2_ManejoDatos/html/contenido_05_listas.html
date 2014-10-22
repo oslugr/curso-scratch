@@ -1,0 +1,56 @@
+<h1 id="listas">Listas</h1>
+<p>En la vida cotidiana resulta bastante intuitivo lo que es una lista: Una enumeración de nombres, objetos o elementos como, por ejemplo, la famosa lista de los reyes godos:</p>
+<p>&quot;Ariarico,Aorico,Geberico,Alavivo,Fritigerno,Atanarico,Alarico I,...&quot;</p>
+<p>De modo similar, en Scratch las listas son variables que, en lugar de contener sólo un valor, pueden contener varios valores en sucesión.</p>
+<p>De un modo bastante intuitivo, como una lista de la compra o una lista de discos más vendidos, los elementos de las listas tienen un orden implícito (del primero al último).</p>
+<hr />
+<h2 id="crear-y-eliminar-listas">Crear y eliminar listas</h2>
+<p>Para crear una lista se recurre al grupo de bloques &quot;Variables&quot; (el mismo que usamos anteriormente para las variables) y hacer click sobre el botón &quot;Nueva lista&quot;.</p>
+<p>Al hacerlo se nos mostrará un cuadro de diálogo en el que podemos indicar el nombre de la lista y, al igual que vimos en el caso de las variables, si se circunscribe al objeto o a todo el programa.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_crear.png" alt="Creando una lista llamada" /><p class="caption">Creando una lista llamada</p>
+</div>
+<p>Si quisiéramos borrar la lista, sólo tendríamos que usar el botón &quot;Borrar una lista&quot; del mismo modo que vimos con las variables.</p>
+<p>Como en el caso de las variables, al crear una lista aparecerán en la paleta nuevos bloques (piezas de puzzle) que nos permiten manipular los datos de esta.</p>
+<hr />
+<h2 id="añadir-eliminar-insertar-y-reemplazar-elementos">Añadir, eliminar, insertar y reemplazar elementos</h2>
+<p>Las listas se manipulan del mismo modo que las variables, añadiendo la complejidad de que contienen varios elementos que pueden añadirse, quitarse o modificarse independientemente. Los distintos bloques que corresponden a una lista nos permiten las siguientes acciones:</p>
+<p>Añadir un elemento. El nuevo elemento se colocará al final de la lista, después del último que hubiera en ella. En la caja de texto (donde pone &quot;cosa&quot; por defecto) se escribe el contenido que se quiera que tenga el elemento añadido:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_aniadir.png" alt="Añadir elementos" /><p class="caption">Añadir elementos</p>
+</div>
+<p>Borrar un elemento de una posición determinada. Se puede elegir el principio den la lista, el final o una posición concreta indicada por su número (por defecto, viene marcado 1):</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_borrar.png" alt="Borrar" /><p class="caption">Borrar</p>
+</div>
+<p>Del mismo modo, se puede insertar un elemento de una posición determinada. También se puede elegir el principio den la lista, el final o una posición concreta indicada por su número (que, por defecto, también viene marcado el 1). Al insertar un elemento en una posición, el que hubiera en ella lugar pasa a la posición siguiente, del mismo modo que todos los que le siguieran:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_insertar.png" alt="Insertar" /><p class="caption">Insertar</p>
+</div>
+<p>Y, por último, también se puede reemplazar un elemento de la lista, cambiando su valor anterior por otro nuevo:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_reemplazar.png" alt="Reemplazar" /><p class="caption">Reemplazar</p>
+</div>
+<p>Como pequeño ejercicio de cómo funcionan estas cosas juntas, con lo que sabemos ya deberíamos poder ver qué hace este programa de ejemplo:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_ejemplo.png" alt="Ejemplo de manipulación de listas" /><p class="caption">Ejemplo de manipulación de listas</p>
+</div>
+<hr />
+<h2 id="acceso-a-elementos-y-existencia-de-elementos">Acceso a elementos y existencia de elementos</h2>
+<p>Se puede acceder a los datos de las listas de un modo bastante parecido a como hemos visto para las variables y otros tipos de dato.</p>
+<p>Para empezar, al crear una lista se crea un bloque con el mismo nombre que esa lista (&quot;MiLista&quot;, en nuestro ejemplo). Se trata de una variable que contiene la lista completa de todos sus elementos, por su orden y separados por espacios en blanco.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_milista.png" alt="Mi listas" /><p class="caption">Mi listas</p>
+</div>
+<p>También podemos acceder a un elemento concreto a través de su posición en la lista, por medio del bloque &quot;item&quot;.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_item.png" alt="item" /><p class="caption">item</p>
+</div>
+<p>Y, por último, podemos averiguar cuántos elementos contiene la lista con &quot;longitud&quot;, que nos retornará el número de items de esta.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_longitud.png" alt="Longitud" /><p class="caption">Longitud</p>
+</div>
+<p>Además de estos bloques, tenemos un bloque lógico (que, como recordaremos, nos retorna un valor de &quot;cierto&quot; o &quot;falso&quot;) que nos sirve para averiguar si en una lista existe un determinad elemento:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/listas_contiene.png" alt="Contiene" /><p class="caption">Contiene</p>
+</div>

@@ -1,0 +1,77 @@
+<h1 id="operadores">Operadores</h1>
+<p>Un operador es un bloque que hace una &quot;operación&quot;. Es decir, que trata una o más variables y retorna un valor. Por ejemplo, como veremos en la siguiente página, una suma se hace mediante un operador.</p>
+<p>Hay dos tipos básicos de operadores: * Por un lado tenemos los operadores aritmético y de cadena, que son los que retornan un valor como si se tratase de una variable (y que tienen los extremos redondeados). * Y, por otro lado, tenemos los operadores lógicos que, como veremos más adelante, retornan un valor lógico de &quot;cierto&quot; o &quot;falso&quot; (y cuyos extremos acaba en punta). Cada uno de estos tipos se usa en un contexto distinto.</p>
+<hr />
+<h2 id="operadores-aritméticos">Operadores aritméticos</h2>
+<p>Los operadores más intuitivos son los aritméticos, los primeros de los cuales podemos ver en la imagen de abajo. que permiten, respectivamente, sumar, restar, multiplicar y dividir:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_aritmeticos_aritmeticos.png" alt="Operadores aritméticos" /><p class="caption">Operadores aritméticos</p>
+</div>
+<p>Como hemos dicho antes, todos estos operadores pueden incluirse en cualquier contexto que admita una variable o un texto. Por ejemplo: <img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_aritmeticos_ejemplo.png" alt="Ejemplo" /></p>
+<p>Naturalmente, también se pueden agrupar para hacer operaciones tan complejas como se desee. Por ejemplo, la operación ((2x3)-(4/2))+2 se haría del siguiente modo:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_aritmeticos_ecuacion.png" alt="Ecuación" /><p class="caption">Ecuación</p>
+</div>
+<p>Otro operador interesante es el que retorna un número aleatorio: <img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_aritmeticos_aleatorio.png" alt="Aleatorio" /></p>
+<p>Es necesario indicarle una número mayor y otro menor, que acoten el rango entre los que se elegirá ese número al azar.</p>
+<p>Aunque menos usados, otros dos operadores para tratar con números son &quot;mod&quot; que devuelve el resto de una división y &quot;redondear&quot;, que redondea un número al entero más cercano:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_aritmeticos_mod_round.png" alt="mod y redondear" /><p class="caption">mod y redondear</p>
+</div>
+<p>Por último, hay un operador para operaciones matemáticas más avanzadas (potencias, trigonométricas, logarítmicas), que permite elegir la operación en una lista e introducir el número sobre el que se efectúa:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_aritmeticos_avanzado.png" alt="Variable Creada" /><p class="caption">Variable Creada</p>
+</div>
+<hr />
+<h2 id="operadores-de-cadena">Operadores de cadena</h2>
+<p>Como no todo van a ser operaciones numéricas, tenemos unos pocos operadores que nos permiten trabajar con cadenas de texto</p>
+<p>El primero es &quot;Unir&quot; que hace precisamente eso: Unir dos cadenas de texto (o variables, o lo que sea, como ya sabemos) en una sola.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_cadena_unir.png" alt="Unir" /><p class="caption">Unir</p>
+</div>
+<p>Hay que notar que &quot;unir&quot; une las cadenas tal y como vienen. Si unimos &quot;Hola&quot; y &quot;Mundo&quot;, el resultado será &quot;HolaMundo&quot;, y no &quot;Hola Mundo&quot;. Si necesitamos espacios o lo que sea, tenemos que ponerlos nosotros.</p>
+<p>También tenemos el operador &quot;letra&quot;, que nos retorna el carácter que ocupa la posición indicada en la cadena que le asignamos.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_cadena_letra.png" alt="Letra" /><p class="caption">Letra</p>
+</div>
+<p>Por ejemplo, y uniendo las dos instrucciones vistas hasta ahora, en el siguiente programa nuestro gatito nos mostraría el escueto mensaje &quot;a&quot;:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_cadena_ejemplo.png" alt="Ejemplo" /><p class="caption">Ejemplo</p>
+</div>
+<p>Por último, el operador &quot;longitud de&quot; nos retornará el número de letras que tiene la cadena que le asignemos.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_cadena_longitud.png" alt="Longitud" /><p class="caption">Longitud</p>
+</div>
+<hr />
+<h2 id="operadores-lógicos">Operadores lógicos</h2>
+<p>Más adelante, cuando se hable de las estructuras de control, veremos que hay ocasiones en las que hay que indicarle al programa que se cumple una condición lógica. Una condición lógica es un tipo especial de variable que puede tomar un valor &quot;cierto&quot; o &quot;falso&quot;. Por ejemplo, en la frase &quot;Abrígate si hace frío&quot;, &quot;hace frío&quot; es la condición lógica. Si es cierta, nos abrigaremos, si no lo es, no lo haremos.</p>
+<p>Los detalles de cómo se usa exactamente esto se verán más adelante, pero ahora vamos a ver qué operadores retornan un valor lógico. Los bloque de estos operadores tienen los extremos apuntados, y sólo encajan en ciertas estructuras (que son las que admiten valores lógicos).</p>
+<p>Los primeros que veremos de este tipo son los operadores de comparación. Estos comparan los dos parámetros que se le introducen, y retorna si se cumple la condición de comparación o no.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_logicos_logicos.png" alt="Operadores" /><p class="caption">Operadores</p>
+</div>
+<ul>
+<li>El primero, con el signo &quot;&lt;&quot;, se cumplirá si el primer número es menor que el segundo.</li>
+<li>El que tiene el signo &quot;=&quot;, se cumplirá,claro está, si ambos son iguales.</li>
+<li>Y el tercero será cierto si el primer número es mayor que el segundo.</li>
+</ul>
+<h4 id="anotación">ANOTACIÓN</h4>
+<p>En principio, estos operadores están preparados para trabajar con números, pero normalmente también pueden operar con cadenas de texto.</p>
+<p>Aunque veremos esto más detenidamente en próximos temas, vamos a ver un ejemplo para aclarar un poco cómo funcionan los operadores lógicos. En el siguiente programa usamos una estructura &quot;si...&quot; que ejecuta las órdenes que contiene (en nuestro caso, hace que nuestro gatito diga &quot;¡Es cierto!&quot; si se cumple la condición que indicamos (que 3 sea menor que 5).</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_logicos_ejemplo.png" alt="Ejemplo" /><p class="caption">Ejemplo</p>
+</div>
+<p>Sería buena idea probar este mismo ejemplo cambiando los valores y el tipo de comparación, para así ver su funcionamiento.</p>
+<p>Los siguiente operadores lógicos son conjunciones que sirven para manipular a otros operadores lógicos. Vamos a verlos uno a uno:</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_logicos_not.png" alt="Negación" /><p class="caption">Negación</p>
+</div>
+<p>El operador &quot;no&quot; es el más simple. Lo que hace es invertir el valor lógico del operador que contiene. Si contiene un operador que retorna un valor &quot;cierto&quot;, este retornará uno &quot;falso&quot;. Es el equivalente a cambiar la frase &quot;Si hace frío...&quot; por &quot;Si NO hace frío...&quot;. Es la llamada negación.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_logicos_and.png" alt="Conjunción" /><p class="caption">Conjunción</p>
+</div>
+<p>La conjunción &quot;y&quot; une dos proposiciones lógicas, y retorna cierto sólo si AMBAS son ciertas.</p>
+<div class="figure">
+<img src="http://campusvirtual.ugr.es/moodle/file.php/1884/img/Tema2/operadores_logicos_or.png" alt="Disyunción" /><p class="caption">Disyunción</p>
+</div>
+<p>La conjunción &quot;o&quot; es similar, pero es cierta si Al MENOS UNA de ellas lo es. Si las dos son falsas, esta conjunción retornará falso.</p>
