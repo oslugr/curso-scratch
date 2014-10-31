@@ -6,10 +6,18 @@ Instalar Scratch y, basándonos en el "hola mundo" que hemos visto, hacer un pro
 Para su corrección, se enviará una captura de pantalla en la que se vean los bloques del programa ya terminado.
 
 ## Formato de entrega
-Cuando tengas el programa, guárdalo y sube una captura de pantalla del programa.
+Cuando tengas el programa, guárdalo y sube el fichero a la plataforma del curso. 
 
-Es decir un fichero de extensión ".png" o ".jpg" con tu nombre y apellidos como "nombre_apellido1_apellido2_tema_2.png". Por ejemplo para "Teresa Sánchez García" el fichero quedará como:
-"teresa_sanchez_garcia_tema_2.png"
+Es decir el fichero de extensión ".jpg" o ".png" con tu nombre y apellidos como ***"nombre_apellido1_apellido2_tema_X.jpg"***.
+
+Por ejemplo para "Teresa Sánchez García" el fichero quedará como:
+***"teresa_sanchez_garcia_tema_X.jpg"***
+
+La X sustitúyela por el número del tema en cuestión.
 
 ##### Anotaciones para la entrega
-Notad que no se incluyen las tildes.
+Os pedimos que no subáis imágenes (pantallazos) del programa ya que eso no sirve de mucho para corregir el ejercicio, queremos comprobar el funcionamiento del mismo. Si lo hacéis de esta manera el ejercicio no estará apto para aprobarlo.
+
+Y seguid el formato que se indica, para que podamos identificar rápidamente los ficheros para la corrección.
+
+Notad que no se deben incluir vocales con acentos, la letra 'ñ' ni espacios en blanco.
