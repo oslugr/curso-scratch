@@ -1,0 +1,525 @@
+
+<style type="text/css">
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px;
+  color: #333;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a.absent {
+  color: #cc0000;
+}
+
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+
+h2:first-child, h1:first-child, h1:first-child + h2, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt, h1 code {
+  font-size: inherit;
+}
+
+h2 tt, h2 code {
+  font-size: inherit;
+}
+
+h3 tt, h3 code {
+  font-size: inherit;
+}
+
+h4 tt, h4 code {
+  font-size: inherit;
+}
+
+h5 tt, h5 code {
+  font-size: inherit;
+}
+
+h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  color: #777777;
+  font-size: 16px;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+hr {
+  background: transparent url("http://tinyurl.com/bq5kskr") repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul :first-child, ol :first-child {
+  margin-top: 0;
+}
+
+ul :last-child, ol :last-child {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt > :first-child {
+  margin-top: 0;
+}
+
+dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd > :first-child {
+  margin-top: 0;
+}
+
+dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+table {
+  padding: 0;
+}
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+span.frame span img {
+  display: block;
+  float: left;
+}
+
+span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+span.float-left span {
+  margin: 13px 0 0;
+}
+
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+
+p code {
+  background-color: #f8f8f8;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  background: transparent;
+}
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt, p code {
+  background-color: transparent;
+  border: none;
+}
+
+</style>
+
+<h1 id="guía-de-estudio">GUÍA DE ESTUDIO</h1>
+<h2 id="scratch-iniciación-a-la-programación-para-enseñanza-primaria-y-secundaria.-3ª-edición">Scratch: Iniciación a la programación para enseñanza primaria y secundaria. (3ª edición)</h2>
+<h2 id="presentación">Presentación</h2>
+<p>Bienvenido al Curso Virtual “Scratch: Iniciación a la programación para enseñanza primaria y secundaria&quot; (3ª edición) organizado por el Centro de Enseñanzas Virtuales de la Universidad de Granada, la Fundación General Universidad de Granada-Empresa, y la Oficina de Software Libre de la Universidad de Granada.</p>
+<p>Para superar con éxito este curso, te recomendamos que leas detenidamente la siguiente <strong>Guía de Estudio</strong>.</p>
+<p>Te ayudará a familiarizarte con la plataforma de teleformación y te proporcionará toda la información necesaria para que superes sin dificultad los bloques teóricos y prácticos programados para la duración del curso. Scratch es un lenguaje de programación visual, creado por el Media Lab del MIT (Massachusetts Institute of Technology), que permite aprender, explorar y experimentar los conceptos de programación de ordenadores mediante el uso de una sencilla interfaz gráfica.</p>
+<p>Con Scratch se pueden crear de forma fácil aplicaciones tales como arte interactivo, historias, simulaciones, animaciones y videojuegos. Scratch funciona construyendo puzzles en base a una serie de piezas predefinidas, pero no es sólo un juego, sino que permite al usuario crear sus propias aplicaciones, y es una forma de estimular la imaginación y educar el pensamiento estructurado.</p>
+<p>Scratch es una aplicación informática especialmente diseñada como herramienta educativa tanto para niños como para adultos con pocos conocimientos informáticos.</p>
+<p>En este curso pretendemos enseñar desde cero cómo realizar programas y aplicaciones en este lenguaje para que pueda ser utilizado posteriormente como herramienta educativa. Usando ejemplos sencillos y dejando al alumno aprender a partir de la programación de sus propias aplicaciones.</p>
+<p>Esperamos que aproveches al máximo este curso descubriendo las posibilidades que ofrece el programa Scratch.</p>
+<h2 id="información-general">Información general</h2>
+<p><strong>Título del curso</strong>: Scratch: Iniciación a la programación para enseñanza primaria y secundaria</p>
+<p><strong>Área de conocimiento</strong>: Tecnologías de la Información.</p>
+<p><strong>Organizan</strong>: Centro de Enseñanzas Virtuales de la Universidad de Granada en colaboración con la Oficina de Software Libre de la Universidad de Granada.</p>
+<p><strong>Directora Académica</strong>: Nuria Rico Castro. Departamento de Estadística e IO, Universidad de Granada.</p>
+<p><strong>Autores de contenidos y tutores del curso</strong> (por orden alfabético):</p>
+<ul>
+<li><p>Ángel Pablo Hinojosa Gutiérrez. Técnico en la Oficina de Software Libre de la Universidad de Granada. Entre los años 2000 y 2007, trabajó como programador, diseñador y administrador web para una correduría de seguros de implantación nacional. Posteriormente, ha trabajado como autónomo en tareas de programación y diseño web.</p></li>
+<li><p>Serafín Vélez Barrera. Ingeniero Técnico en Informática y profesor de clases en los Campus Infantiles de Software Libre, talleres de formación en la OSL y actualización de equipos de la UGR para campañas de donación a asociaciones sin ánimo de lucro y Programador en Bi4Group.</p></li>
+</ul>
+<p>Destinatarios: Estudiantes y profesionales que no posean conocimientos de programación y que estén interesados en aprender un lenguaje de programación sencillo, y didáctico, pero a la vez estructurado.</p>
+<p>Estudiantes y profesionales que tengan conocimientos de programación y que deseen aprender Scratch.</p>
+<p>Específicamente, puede ir dirigido a:</p>
+<ul>
+<li>Estudiantes de grado y máster relacionados con Ciencias de la Educación y/o Bellas Artes.</li>
+<li>Estudiantes de grado y máster relacionados con carreras técnicas o científicas.</li>
+<li>Profesionales relacionados con la enseñanza y el aprendizaje. Universitarios de cualquier titulación y profesionales en general que deseen adquirir conocimientos prácticos en el diseño y publicación de sitios web en Internet.</li>
+<li>Profesionales que trabajen en un entorno de tecnologías de la información.</li>
+<li>Estudiantes de módulos profesionales relacionados con la educación y la administración de sistemas informáticos o la programación.</li>
+</ul>
+<h2 id="cómo-estudiar-un-curso-virtual">Cómo estudiar un curso virtual</h2>
+<p>A diferencia de la enseñanza tradicional y presencial, donde el profesor es el eje del proceso de enseñanza-aprendizaje, en la formación on-line el protagonista es el alumno y su actitud dinámica y participativa frente a los diferentes recursos y fuentes de información que se le ofrecen.</p>
+<p>El estudio on-line no consiste en una simple descarga de materiales, sino que el alumno debe aprovechar todas las posibilidades que las Tecnologías de la Información y la Comunicación (TIC) han puesto a su disposición, otorgándole así una mayor libertad y responsabilidad para alcanzar el éxito en su formación.</p>
+<p>De este modo, las personas que sigan el Curso de especialización podrán fijar un calendario de trabajo personal y ser los 'promotores' de su formación, aunque siempre con la orientación y ayuda de su tutor y la participación del resto de compañeros.</p>
+<p>En este proceso, es muy importante que el alumno conozca y maneje el entorno de de teleformación de la plataforma Moodle, el software que utiliza el Centro de Enseñanzas Virtuales de la Universidad de Granada para la formación on-line. Para ello es recomendable que visualice detenidamente Un paseo por el aula donde se explican las diferentes herramientas de la plataforma y el modo de utilización por medio de diferentes demostraciones en Flash.</p>
+<h2 id="metodología">Metodología</h2>
+<p>La metodología de este curso se basa en estrategias propias de una enseñanza activa y autónoma, centrada en la figura del alumno como elemento clave del sistema de formación y con una participación del profesor/tutor como dinamizador y facilitador del proceso de aprendizaje.</p>
+<p>Desde el primer momento, se familiarizará al alumno con los sistemas de formación on-line y se creará el ambiente propio de un aula virtual donde el estudiante no tenga la sensación de aislamiento o soledad.</p>
+<p>Estudiar sobre papel es diferente a hacerlo ante una pantalla de ordenador, pero las herramientas de comunicación de la plataforma harán más fácil, ameno y dinámico el tiempo de estudio:</p>
+<ul>
+<li><strong>Correo electrónico</strong>. Permite la comunicación dentro de la plataforma y es muy adecuado para hacer consultas de forma personalizada.</li>
+<li><strong>Foro</strong>. Al ser los mensajes públicos, sirve para plantear temas de interés general.</li>
+<li><strong>Chat</strong>. Posibilita comunicarse y &quot;charlar&quot; en tiempo real, tanto acerca de temas propuestos por los alumnos como acerca de otros planteados y planificados por el profesor.</li>
+<li><strong>Videollamada</strong>. También es posible hacer uso de videollamadas para aclarar las cuestiones que aparezcan.</li>
+</ul>
+<p>Un elemento clave dentro del desarrollo del curso será el papel que realizará el tutor para orientar al alumno en el seguimiento de los contenidos. Los alumnos contarán en todo momento con la ayuda de un profesor-tutor, que estará disponible para la resolución de cualquier tipo de duda o problema.</p>
+<p>Así mismo, podrán recurrir al equipo de profesionales de Centro de Enseñanza Virtuales de la Universidad de Granada para resolver cualquier problema técnico. Para cualquier consulta, pueden utilizar el formulario de contacto de la página web del centro de enseñanzas virtuales de la Universidad de Granada o llamar al teléfono +34 958241000 - Ext 20205.</p>
+<p>Desde el punto de vista metodológico, el curso ofrece múltiples recursos para facilitar el estudio:</p>
+<ul>
+<li>El temario estará disponible en la plataforma, estructurado en seis temas interrelacionados. Cada tema abarca un aspecto fundamental sobre el programa Scratch, y han sido seleccionados con el objetivo de proporcionar al alumno un conocimiento global y actualizado de las mismas. Los temas están secuencializados, de forma que es necesario comprender y asimilar un tema para pasar al siguiente.</li>
+<li>Contarán con ejercicios de autoevaluación que les permitirán ver cómo van progresando y si van asimilando los contenidos del curso.</li>
+<li>Los tutores les plantearán actividades que serán tenidas en cuenta en la evaluación y que les ayudarán a comprender mejor los contenidos.</li>
+<li>Durante el desarrollo del curso y al final se plantea la realización de un proyecto por parte del alumno en el que se pondrá a prueba los conocimientos aprendidos sobre el programa Scratch.</li>
+</ul>
+<h2 id="objetivos">Objetivos</h2>
+<p>El objetivo del curso es introducir al alumno en el programa Scratch de forma práctica, conociendo los fundamentos, y las principales potencialidades del programa a partir de aplicaciones sencillas.</p>
+<p>Además de conocer y manejar el programa de forma genérica, el alumno podrá crear aplicaciones sencillas tales como minijuegos, animaciones, etc.</p>
+<p>Los objetivos a nivel de contenido son:</p>
+<ul>
+<li>El alumno conocerá
+<ul>
+<li>La sintaxis de Scratch.</li>
+<li>Cómo Scratch representa las diferentes estructuras de programación.</li>
+<li>Qué tipo de aplicaciones son las más adecuadas para trabajar con ellas en Scratch.</li>
+</ul></li>
+<li>El alumno será capaz de
+<ul>
+<li>Realizar programas simples: animaciones, arte interactivo, minijuegos.</li>
+<li>Adaptar el entorno de trabajo para trabajar con este lenguaje de programación.</li>
+<li>Enseñar a programar a niños en Scratch.</li>
+</ul></li>
+</ul>
+<h2 id="temario">Temario</h2>
+<p>Un total de 75 horas.</p>
+<p>75 horas virtuales, 3 créditos ECTS.</p>
+<p>40 horas de consulta de material on-line y 35 horas de trabajo del alumno a través de la plataforma de teleformación.</p>
+<ul>
+<li><strong>Tema 1</strong>: Introducción: conceptos generales, instalación, mi primer programa.</li>
+<li><strong>Tema 2</strong>: Manejo de datos.</li>
+<li><strong>Tema 3</strong>: Control y movimiento. Multimedia.</li>
+<li><strong>Tema 4</strong>: Arte interactivo. Minijuegos. Videojuegos.</li>
+<li><strong>Tema 5</strong>: Aspectos avanzados de Scratch.</li>
+<li><strong>Tema 6</strong>: Proyecto Final.</li>
+</ul>
+<h2 id="temporización">Temporización</h2>
+<p>El curso se desarrollará del 3 de noviembre al 3 de diciembre de 2014, aunque el temario concluirá una semana antes para destinar los últimos días a resolución de dudas y orientación en la realización de las actividades propuestas.</p>
+<p>Es recomendable dedicar de 1 a 2 horas diarias. En todo caso, la planificación indicada es sólo una orientación para que el alumno lleve adecuadamente el aprendizaje de los diferentes temas, pudiendo cada alumno fijar su propio ritmo de estudio, por ejemplo, decidir cuándo se conecta a la plataforma, realiza una actividad o remite una aportación al foro.</p>
+<p>En el esquema anterior se puede ver la secuenciación de temas. Como se observa, los temas son consecutivos, es necesario leer y comprender cada uno de los temas antes de pasar al siguiente.</p>
+<h2 id="evaluación">Evaluación</h2>
+<p>La evaluación del curso se hará atendiendo a los siguientes criterios:</p>
+<ul>
+<li>Realización del <strong>proyecto final</strong>: 50% de la nota.</li>
+<li>Realización de las <strong>actividades propuestas</strong> en cada uno de los módulos: 25% de la nota.</li>
+<li>Participación en <strong>foros y lectura del material</strong>: 25% de la nota.</li>
+</ul>
+<p>Las actividades académicas específicas a desarrollar serán:</p>
+<ul>
+<li><strong>Ejecución de los ejemplos</strong> o visualización de los mismos (5-10 ejemplos por tema)</li>
+<li><strong>Participación en los foros</strong> de cada uno de los módulos (un foro por módulo, más otro de cuestiones generales)</li>
+<li><strong>Ejercicios</strong>: actividades obligatorias de cada tema y actividades opcionales adicionales (ejercicios de autoevaluación).</li>
+<li><strong>Proyecto final</strong>.</li>
+</ul>
+<h2 id="autoevaluación">Autoevaluación</h2>
+<p>El curso contempla la realización de distintos ejercicios de autoevaluación al final de cada bloque temático, a modo de resumen de todos los contenidos expuestos en los diferentes módulos o temas.</p>
+<p>Se aconseja la realización de estos ejercicios para comprobar personalmente el aprovechamiento del curso.</p>
+<h2 id="actividades">Actividades</h2>
+<p>A lo largo del curso se encontrarán varios tipos de actividades:</p>
+<ul>
+<li><strong>Ejercicios específicos</strong> de los diferentes módulos que se deberán remitir al tutor para su posterior evaluación.</li>
+<li><strong>Propuestas para ampliar y profundizar en los contenidos</strong> con lecturas de documentos y consultas de páginas web.</li>
+<li><strong>Ejemplos</strong> sobre contenidos concretos para analizar de forma individualizada.</li>
+<li><strong>Foros y chats</strong>: los irá planteando cada tutor a medida que avance el curso según las características e intereses de cada grupo.</li>
+</ul>
+<h2 id="recursos-on-line">Recursos on-line</h2>
+<p>Se facilita al final de cada tema.</p>
+<h2 id="bibliografía">Bibliografía</h2>
+<p>Se facilita al final de cada tema</p>
