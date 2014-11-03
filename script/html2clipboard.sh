@@ -16,9 +16,22 @@
 #  MA 02110-1301, USA.
 #  
 
-for fichero in $(ls *.html)
+############################################################################
+# Requirements:
+#	* You need 'xclip' shell app installed before use this script.
+#
+# To use this script:
+# * Give exec permissions to this script and run it as "./html2clipboard"
+# * Or run it as "bash html2clipboard" if you didn't give exec. permissions
+#
+# For each file html in the folder, the content is copied to clipboard and
+# wait to a key press for continue.
+############################################################################
+
+for file in $(ls *.html)
 do
-    echo ${fichero}
-    cat $fichero | xclip -selection clipboard
+    echo ${file}
+    cat $file | xclip -selection clipboard
+    echo "$file copied to clipboard"
     read
 done

@@ -16,13 +16,28 @@
 #  MA 02110-1301, USA.
 #  
 
+############################################################################
+# Requirements:
+#	* You need 'pandoc' shell app installed before use this script.
+#
+# To use this script:
+# * Give exec permissions to this script and run it as "./html2clipboard"
+# * Or run it as "bash html2clipboard" if you didn't give exec. permissions
+# Before to run it, copy this script to the html folder where you want to
+# run it.
+#
+# For each file in markdown format in the folder, the content is 'tranlated'
+# to a new html file in a folder called 'html'.
+# You have to change the id of the moodle course with the correct id to see
+# the images.
+############################################################################
 
 mkdir -p html # It creates the directory if it does not exist
 
 for fichero in $( ls *.md)
 do
     echo ${fichero}
-    pandoc -f markdown -t html -o html/${fichero} ${fichero}
+    pandoc -f markdown -t html -o html/${fichero} ${fichero} # Translate markdown to html
     mv "html/$fichero" "html/${fichero%.md}.html"
 done
 
