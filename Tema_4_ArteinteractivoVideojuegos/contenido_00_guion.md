@@ -1,5 +1,4 @@
 # Guión
-- - -
 
 Vamos a realizar una pequeña guía para hacer nuestro videojuego.
 

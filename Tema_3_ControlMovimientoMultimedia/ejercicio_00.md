@@ -8,9 +8,9 @@ Responde a las siguientes frases indicando si es verdadero o falso lo que dicen:
 * No se puede crear una lista para almacenar información acerca del objeto tal como la posición, el número de pasos dados, etc.
 
 ## Formato de entrega
-Cuando tengas el programa, guárdalo y sube el fichero a la plataforma del curso. 
+Cuando tengas las respuestas en un fichero de texto plano o un pdf sube el fichero a la plataforma del curso. 
 
-Es decir el fichero de extensión ".sb" o ".sb2" con tu nombre y apellidos como ***"nombre_apellido1_apellido2_tema_X_autoevaluacion.txt"***.
+Es decir el fichero de extensión ".txt" o ".pdf" con tu nombre y apellidos como ***"nombre_apellido1_apellido2_tema_X_autoevaluacion.txt"***.
 
 Por ejemplo para "Teresa Sánchez García" el fichero quedará como:
 ***"teresa_sanchez_garcia_tema_X_autoevaluacion.txt"***

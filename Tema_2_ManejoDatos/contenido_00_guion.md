@@ -1,5 +1,4 @@
 # Guión
-- - -
 
 En este bloque se verán elementos básicos de trabajo:
 

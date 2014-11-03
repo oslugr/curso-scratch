@@ -1,16 +1,424 @@
+
+<style type="text/css">
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px;
+  color: #333;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a.absent {
+  color: #cc0000;
+}
+
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+
+h2:first-child, h1:first-child, h1:first-child + h2, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt, h1 code {
+  font-size: inherit;
+}
+
+h2 tt, h2 code {
+  font-size: inherit;
+}
+
+h3 tt, h3 code {
+  font-size: inherit;
+}
+
+h4 tt, h4 code {
+  font-size: inherit;
+}
+
+h5 tt, h5 code {
+  font-size: inherit;
+}
+
+h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  color: #777777;
+  font-size: 16px;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+hr {
+  background: transparent url("http://tinyurl.com/bq5kskr") repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul :first-child, ol :first-child {
+  margin-top: 0;
+}
+
+ul :last-child, ol :last-child {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt > :first-child {
+  margin-top: 0;
+}
+
+dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd > :first-child {
+  margin-top: 0;
+}
+
+dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+table {
+  padding: 0;
+}
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+span.frame span img {
+  display: block;
+  float: left;
+}
+
+span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+span.float-left span {
+  margin: 13px 0 0;
+}
+
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+
+p code {
+  background-color: #f8f8f8;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  background: transparent;
+}
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt, p code {
+  background-color: transparent;
+  border: none;
+}
+
+</style>
+
 <h1 id="control">Control</h1>
 <p>Veamos sobre lo que trata el control de objetos de Scratch.</p>
 <h2 id="introducción">Introducción</h2>
 <p>Cuando programamos en Scratch uno de los pilares básicos es el control de los objetos, para así conseguir los objetivos que tengamos en mente, como por ejemplo controlar la repeticiones de una acción, o lo que queremos que se ejecute al incio cuando pulsamos la bandera de inicio del programa.</p>
 <p>Es de los apartados más importantes ya que aquí definiremos el momento en que se tienen que ejecutar las acciones, podemos controlar condiciones para que se ejecuten otras acciones o también podemos controlar la parada de los programas.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_introduccion.png" alt="Introducción" /><p class="caption">Introducción</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_introduccion.png" title="Introducción" />
 </div>
 <h2 id="piezas">Piezas</h2>
 <p>Este bloque de Scratch es el bloque donde tenemos todas las directivas para poder controlar los objetos de nuestro programa. Así entonces las podemos agrupar en los siguientes apartados:</p>
 <h3 id="al-presionar...">Al presionar...</h3>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_alpresionar.png" alt="Al presionar" /><p class="caption">Al presionar</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_alpresionar.png" title="Al presionar" />
 </div>
 <p>Hay 3 directivas de este tipo como se puede ver en la imagen, el significado de cada una es:</p>
 <ul>
@@ -19,20 +427,20 @@
 <li><p><strong>Al presionar el objeto</strong> <br> Cuando hagamos click sobre el objeto que indica esta pieza se ejecutará lo que englobemos en esta pieza.</p></li>
 </ul>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_alpresionar_ejemplo.png" alt="Ejemplo presionar" /><p class="caption">Ejemplo presionar</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_alpresionar_ejemplo.png" title="Ejemplo presionar" />
 </div>
 <h3 id="condiciones-de-espera">Condiciones de espera</h3>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionespera.png" alt="Condiciones de espera" /><p class="caption">Condiciones de espera</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionespera.png" title="Condiciones de espera" />
 </div>
 <p>Con estas piezas conseguiremos pausar la ejecución de un bloque de directrices un tiempo especificado (la pieza de la izquierda de la imagen) o bien se pausará la ejecución hasta que no se cumpla una condición.</p>
 <p>La segunda pieza nos puede servir por ejemplo para reanudar la ejecución de un objeto cuando una variable que hayamos especificado tome un valor determinado.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionespera_ejemplo.png" alt="Ejemplo" /><p class="caption">Ejemplo</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionespera_ejemplo.png" title="Ejemplo" />
 </div>
 <h3 id="repetición-de-acciones">Repetición de acciones</h3>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_bucles.png" alt="Bucles" /><p class="caption">Bucles</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_bucles.png" title="Bucles" />
 </div>
 <p>Estas piezas son piezas que se usan muy pero que muy a menudo, sirven para repetir una serie de acciones (lo que se llaman bucles) según se den ciertas condiciones o de forma indefinida. Así veamos que significan estas 4 piezas:</p>
 <ul>
@@ -42,12 +450,12 @@
 <li><p><strong>Repetir hasta que &lt; &gt;</strong> <br> Esta pieza es parecida a la de &quot;Por siempre si...&quot; ya que repetirá las acciones hasta que no se cumpla la condición que indiquemos en el hexágono.</p></li>
 </ul>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_bucles_ejemplo.png" alt="Ejemplo bucles" /><p class="caption">Ejemplo bucles</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_bucles_ejemplo.png" title="Ejemplo de bucles" />
 </div>
 <p>Como nota extra para este apartado, podemos ver que de estas 4 piezas hay dos (Por siempre y Por siempre si&lt;&gt;) a las que no les podemos añadir ninguna otra pieza a continuación de ellas, esto se debe a la lógica de la pieza, ya que si indicamos que se repitan una serie de acciones por siempre, estamos diciendo que sea de forma indefinida a menos que paremos el programa, así que tendremos que tenerlo en cuenta.</p>
 <h3 id="ejecutar-acciones-según-condiciones">Ejecutar acciones según condiciones</h3>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionales.png" alt="Condiciones" /><p class="caption">Condiciones</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionales.png" title="Condiciones" />
 </div>
 <p>En el desarrolo de un programa es bastante normal que se tengan que ejecutar ciertas acciones si se da una condición o ejecutar otras si no se da.</p>
 <p>Para esto tenemos estas piezas para programar condiciones de ejecución:</p>
@@ -57,11 +465,11 @@
 </ul>
 <p>Estas dos piezas las podemos ir anidando como sea conveniente, un ejemplo sencillo es mostrar un mensaje dependiendo del valor de una variable:</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionales_ejemplo.png" alt="Ejemplo de condiciones" /><p class="caption">Ejemplo de condiciones</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_condicionales_ejemplo.png" title="Ejemplo de condiciones" />
 </div>
 <h3 id="enviar-y-recibir-mensajes">Enviar y recibir mensajes</h3>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_mensajes.png" alt="Mensajes" /><p class="caption">Mensajes</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_mensajes.png" title="Mensajes" />
 </div>
 <p>Los mensajes nos sirven para establecer digamos una comunicación entre los objetos, veamos que significan las piezas:</p>
 <ul>
@@ -70,25 +478,26 @@
 <li><strong>Al recibir []</strong> <br> Cuando enviamos un mensaje este lo tenemos que procesar en algún objeto, pues esta pieza nos sirve para eso, para ejecutar acciones cuando se recibe un mensaje.</li>
 </ul>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_mensajes_ejemplo.png" alt="Ejemplo de mensajes" /><p class="caption">Ejemplo de mensajes</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_mensajes_ejemplo.png" title="Ejemplo de mensajes" />
 </div>
 <p>En este ejemplo de un sólo objeto enviamos el mensaje &quot;mensaje&quot; y se procesa en el mismo objeto, pero lo podemos expandir a más objetos con diferentes mensajes a enviar.</p>
 <h3 id="detención">Detención</h3>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_detencion.png" alt="Detencion" /><p class="caption">Detencion</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_detencion.png" title="Detencion" />
 </div>
-<p>Tenemos dos piezas de detención: * <strong>Detener programa</strong> <br> Con esta pieza tenemos un programa de un objeto ya que a cada objeto le podemos asignar varios programas.</p>
+<p>Tenemos dos piezas de detención:</p>
 <ul>
-<li><strong>Detener todo</strong> <br> Esta para la ejecución de todos los programas de todos los objetos.</li>
+<li><p><strong>Detener programa</strong> <br> Con esta pieza tenemos un programa de un objeto ya que a cada objeto le podemos asignar varios programas.</p></li>
+<li><p><strong>Detener todo</strong> <br> Esta para la ejecución de todos los programas de todos los objetos.</p></li>
 </ul>
 <h2 id="anotaciones">Anotaciones</h2>
 <p>Fijaos que hay 3 tipos de piezas que podemos diferenciar por la estructura de su dibujo, dicho en otras palabras, hay piezas a las que podemos ponerle una pieza a continuación, las piezas que sólo admiten una (o una serie) de piezas por encima de ella y las que aceptan piezas tanto por encima como por debajo.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_tipospiezas.png" alt="Tipos de piezas" /><p class="caption">Tipos de piezas</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_tipospiezas.png" title="Tipos de piezas" />
 </div>
 <p>Es decir, las que sólo admiten una o más piezas por debajo son para iniciar un proceso. Luego tenemos las piezas antagónicas que son para indicar donde acaba un proceso. Y el resto de piezas, aunque podemos decir que hay otro tipo más que es una mezcla de una pieza normal con una pieza &quot;terminadora&quot;, que es la que podemos ver en la imagen anterior a la derecha, que hace un proceso repetitivo pero después de este proceso ya no podemos continuar el programa, veamos un ejemplo de como podemos usar estas piezas:</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_anotaciones_ejemplo.png" alt="Tipos de piezas" /><p class="caption">Tipos de piezas</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema3_control_anotaciones_ejemplo.png" title="Tipos de piezas" />
 </div>
 <p>Ambos procesos que se ven, hacen exactamente lo mismo, mover a Scratch hasta que toca un borde del escenario, salvo que el proceso de la derecha en la práctica nunca para, haced un programa copiando estas piezas y ejecutad ambos procesos (primero el izquierdo y luego el derecho) veréis como con el proceso derecho Scratch para de andar pero si lo movemos a otra parte vuelve a andar, y la única manera de parar el proceso es dándole al botón de Stop que tenemos al lado de la bandera verde.</p>
 <p>Tened este detalle en cuenta para que no se disloquen los programas que hagáis más adelante.</p>

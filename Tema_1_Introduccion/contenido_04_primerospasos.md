@@ -5,13 +5,13 @@ En Windows lo normal es buscarlo en el menú inicio, aunque quizás también se 
 
 En cualquier caso, el icono de Scratch es siempre el mismo: La caricatura de la cabeza de un gatito parecido a este:
 
-![Icono de Scratch](../img/Tema1_primerospasos_icono.png)
+![](../img/Tema1_primerospasos_icono.png "Icono de Scratch")
 
 Ese gatito también se llama "Scratch", es al mismo tiempo la mascota y el principal elemento de trabajo de este programa, y vamos a acostumbrarnos a verlo mucho en adelante.
 
 Al hacer clic en nuestro gatito se inicia el programa, que tiene un aspecto parecido a este:
 
-![Pantalla principal de Scratch](../img/Tema1_primerospasos_vista_general.png)
+![](../img/Tema1_primerospasos_vista_general.png "Pantalla principal de Scratch")
 
 La apariencia exacta de algunos detalles puede cambiar entre versiones o sistemas operativos, pero es básicamente igual en todos ellos y su uso idéntico.
 
@@ -20,11 +20,11 @@ Como puede verse al primer vistazo, se han elegido formas redondeadas y suaves y
 Veamos ahora, en las siguientes secciones, cada elemento de la ventana de Scratch.
 
 ## Barra de botones y menús
-![Ubicación de la barra de botones](../img/Tema1_primerospasos_botonesmenus.png)
+![](../img/Tema1_primerospasos_botonesmenus.png "Ubicación de la barra de botones")
 
 En la parte superior del programa hay una barra de botones y menús que nos permite una serie de opciones (en el caso de los botones, se muestra un texto descriptivo al pasar el puntero por encima).
 
-![Barra de botones](../img/Tema1_primerospasos_barrabotones.png)
+![](../img/Tema1_primerospasos_barrabotones.png "Barra de botones")
 
 Al pulsar el primer botón, con forma de "bola de mundo", se muestra un largo menú que sirve para cambiar el idioma del programa. Como se puede ver, está traducido a una gran cantidad de idiomas.
 
@@ -37,7 +37,7 @@ uno de los ejes fundamentales del aprendizaje, y con esta herramienta se facilit
 
 Al pulsar ese botón, se abre una ventana que permite "etiquetar" el programa (poner pequeños textos o palabras que lo describan), ponerle un nombre, escribir una pequeña descripción y subirlo a nuestra cuenta en las páginas del MIT.
 
-![Ventana para compartir](../img/Tema1_primerospasos_ventanacompartir.png)
+![](../img/Tema1_primerospasos_ventanacompartir.png "Ventana para compartir")
 
 Como la primera vez que se use Scratch es muy probable que no tengamos esa cuenta, un enlace permite acceder a la página oficial de Scratch, donde un pequeño formulario nos permite crear una.
 
@@ -48,7 +48,8 @@ A continuación tenemos los clásicos menús de "Archivo" (para crear, abrir o g
 Después hay una serie de pequeños botones que se usarán para manipular copiar y modificar objetos, y cuyo uso veremos más adelante, seguidos de otro grupo de botones muy útiles que cambian la forma de presentar los espacios de trabajo para usarlos más cómodamente.
 
 ## El área de trabajo
-![Ubicación del área de trabajo](../img/Tema1_primerospasos_areatrabajo.png)
+
+![](../img/Tema1_primerospasos_areatrabajo.png "Ubicación del área de trabajo")
 
 La parte principal de nuestro entorno está ocupada por el área de trabajo. 
 
@@ -61,7 +62,8 @@ Justo encima de este área tenemos el selector de objetos. Al iniciar Scratch, y
 Cada objeto puede tener uno o más programas que indiquen cosas como su movimiento, lo que hace, etc; con este selector elegimos con cuál de los objetos estamos trabajando.
 
 ## El escenario
-![Ubicación del escenario](../img/Tema1_primerospasos_areaescenario.png)
+
+![](../img/Tema1_primerospasos_areaescenario.png "Ubicación del escenario")
 
 El escenario es donde todo ocurre.
 
@@ -74,7 +76,7 @@ En su parte superior derecha pueden verse un par de iconos. El primero, una band
 ## Bloques
 Otro par de áreas muy importantes son la paleta de bloques y el selector de grupos de bloques.
 
-![Paleta de bloques](../img/Tema1_primerospasos_bloquespaleta.png)
+![](../img/Tema1_primerospasos_bloquespaleta.png "Paleta de bloques")
 
 La paleta de bloques contiene las piezas (bloques) que usaremos para crear un programa. Cada una de estas piezas hace una tarea básica, y varias de ellas juntas conforman un programa. Puede verse que estos bloques imitan el aspecto de piezas de puzzle.
 
@@ -84,18 +86,18 @@ Como veremos más adelante, para hacerlo sólo debemos tomar la pieza que necesi
 
 Dado que hay muchas más piezas de las que se pueden mostrar al mismo tiempo de una forma cómoda, se han agrupado en clases (grupos) según el tipo de uso que tengan, y cada uno de estos grupos puede verse sobre la paleta de bloques, en el área de selección de grupos de bloques.
 
-![Selector de grupos de bloques](../img/Tema1_primerospasos_bloquesgrupo.png)
+![](../img/Tema1_primerospasos_bloquesgrupo.png "Selector de grupos de bloques")
 
 Haciendo click en cada uno de esos grupos, los bloques mostrados en la paleta de bloques cambian a los de ese grupo, y así podemos escoger el que nos interese en cada momento.
 
 ## Objetos personales
-![Objetos personales](../img/Tema1_primerospasos_objetospersonales.png)
+![](../img/Tema1_primerospasos_objetospersonales.png "Objetos personales")
 
 Abajo a la derecha está el área de objetos personales. Aquí podemos crear, seleccionar y manipular nuestros propios personajes y elementos para usarlo en nuestros juego y animaciones. También podemos seleccionar objetos que ya hayamos creado (y guardado) antes, o incluso elegirlo de una selección que el propio juego trae consigo.
 
 A efectos prácticos, para Scratch un "objeto" no es más que un dibujo al que luego le podremos añadir programas para que actúe de cierta forma. De este modo el creador de objetos, al que se accede pulsando el primero de lo iconos de este área (la estrella con un pincel), no es mas que un programa de dibujo muy simple, pero muy completo.
 
-![Editor de objetos](../img/Tema1_primerospasos_bloquesgrupo.png)
+![](../img/Tema1_primerospasos_bloquesgrupo.png "Editor de objetos")
 
 El editor de objetos es en sí mismo un juego, y resulta una herramienta muy intuitiva y divertida. permite dibujar a "mano alzada" o usar varias herramientas básicas comunes a este tipo de programas.
 

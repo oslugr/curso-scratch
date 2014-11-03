@@ -16,8 +16,6 @@ Por ejemplo para "Teresa Sánchez García" el fichero quedará como:
 La X sustitúyela por el número del tema en cuestión.
 
 ##### Anotaciones para la entrega
-Os pedimos que no subáis imágenes (pantallazos) del programa ya que eso no sirve de mucho para corregir el ejercicio, queremos comprobar el funcionamiento del mismo. Si lo hacéis de esta manera el ejercicio no estará apto para aprobarlo.
-
-Y seguid el formato que se indica, para que podamos identificar rápidamente los ficheros para la corrección.
+Seguid el formato que se indica, para que podamos identificar rápidamente los ficheros para la corrección.
 
 Notad que no se deben incluir vocales con acentos, la letra 'ñ' ni espacios en blanco.

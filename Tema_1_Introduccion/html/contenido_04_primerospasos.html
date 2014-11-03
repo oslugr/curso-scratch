@@ -1,25 +1,433 @@
+
+<style type="text/css">
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px;
+  color: #333;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a.absent {
+  color: #cc0000;
+}
+
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+
+h2:first-child, h1:first-child, h1:first-child + h2, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt, h1 code {
+  font-size: inherit;
+}
+
+h2 tt, h2 code {
+  font-size: inherit;
+}
+
+h3 tt, h3 code {
+  font-size: inherit;
+}
+
+h4 tt, h4 code {
+  font-size: inherit;
+}
+
+h5 tt, h5 code {
+  font-size: inherit;
+}
+
+h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  color: #777777;
+  font-size: 16px;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+hr {
+  background: transparent url("http://tinyurl.com/bq5kskr") repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul :first-child, ol :first-child {
+  margin-top: 0;
+}
+
+ul :last-child, ol :last-child {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt > :first-child {
+  margin-top: 0;
+}
+
+dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd > :first-child {
+  margin-top: 0;
+}
+
+dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+table {
+  padding: 0;
+}
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+span.frame span img {
+  display: block;
+  float: left;
+}
+
+span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+span.float-left span {
+  margin: 13px 0 0;
+}
+
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+
+p code {
+  background-color: #f8f8f8;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  background: transparent;
+}
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt, p code {
+  background-color: transparent;
+  border: none;
+}
+
+</style>
+
 <h1 id="primeros-pasos">Primeros pasos</h1>
 <p>Scratch se inicia (o &quot;ejecuta&quot;, o &quot;arranca&quot;) como cualquier otro programa de nuestro ordenador.</p>
 <p>En Windows lo normal es buscarlo en el menú inicio, aunque quizás también se haya instalado un icono en el escritorio. En otros sistemas operativos habrá que usar la barra de aplicaciones o actividades o, en general, el procedimiento que se use normalmente para cualquier otro programa.</p>
 <p>En cualquier caso, el icono de Scratch es siempre el mismo: La caricatura de la cabeza de un gatito parecido a este:</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_icono.png" alt="Icono de Scratch" /><p class="caption">Icono de Scratch</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_icono.png" title="Icono de Scratch" />
 </div>
 <p>Ese gatito también se llama &quot;Scratch&quot;, es al mismo tiempo la mascota y el principal elemento de trabajo de este programa, y vamos a acostumbrarnos a verlo mucho en adelante.</p>
 <p>Al hacer clic en nuestro gatito se inicia el programa, que tiene un aspecto parecido a este:</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_vista_general.png" alt="Pantalla principal de Scratch" /><p class="caption">Pantalla principal de Scratch</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_vista_general.png" title="Pantalla principal de Scratch" />
 </div>
 <p>La apariencia exacta de algunos detalles puede cambiar entre versiones o sistemas operativos, pero es básicamente igual en todos ellos y su uso idéntico.</p>
 <p>Como puede verse al primer vistazo, se han elegido formas redondeadas y suaves y se ha optado por la simplicidad de diseño, todo ello con la idea de conformar un entorno relajado y en el que al niño le resulte cómodo trabajar. El tamaño y las proporciones de la ventana pueden modificarse para adaptarse al tamaño de la pantalla o nuestras preferencias.</p>
 <p>Veamos ahora, en las siguientes secciones, cada elemento de la ventana de Scratch.</p>
 <h2 id="barra-de-botones-y-menús">Barra de botones y menús</h2>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_botonesmenus.png" alt="Ubicación de la barra de botones" /><p class="caption">Ubicación de la barra de botones</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_botonesmenus.png" title="Ubicación de la barra de botones" />
 </div>
 <p>En la parte superior del programa hay una barra de botones y menús que nos permite una serie de opciones (en el caso de los botones, se muestra un texto descriptivo al pasar el puntero por encima).</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_barrabotones.png" alt="Barra de botones" /><p class="caption">Barra de botones</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_barrabotones.png" title="Barra de botones" />
 </div>
 <p>Al pulsar el primer botón, con forma de &quot;bola de mundo&quot;, se muestra un largo menú que sirve para cambiar el idioma del programa. Como se puede ver, está traducido a una gran cantidad de idiomas.</p>
 <p>El siguiente botón es el clásico icono de un disquette que sirve para guardar el programa que estemos haciendo.</p>
@@ -27,7 +435,7 @@
 <p>La filosofía de educativa que hay detrás de Scratch tiene en el hecho de compartir el conocimiento como uno de los ejes fundamentales del aprendizaje, y con esta herramienta se facilita enormemente ese acto de compartir.</p>
 <p>Al pulsar ese botón, se abre una ventana que permite &quot;etiquetar&quot; el programa (poner pequeños textos o palabras que lo describan), ponerle un nombre, escribir una pequeña descripción y subirlo a nuestra cuenta en las páginas del MIT.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_ventanacompartir.png" alt="Ventana para compartir" /><p class="caption">Ventana para compartir</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_ventanacompartir.png" title="Ventana para compartir" />
 </div>
 <p>Como la primera vez que se use Scratch es muy probable que no tengamos esa cuenta, un enlace permite acceder a la página oficial de Scratch, donde un pequeño formulario nos permite crear una.</p>
 <p>Esa cuenta es gratuita pero, dado que Scratch está pensado para ser usado tanto por adultos como por niños de todas las edades, existen unas normas básicas de comportamiento que rigen qué clase de cosas son adecuadas para ser puestas en la web. Esas normas pueden leerse siguiendo un enlace que hay en el propio formulario de inscripción.</p>
@@ -35,7 +443,7 @@
 <p>Después hay una serie de pequeños botones que se usarán para manipular copiar y modificar objetos, y cuyo uso veremos más adelante, seguidos de otro grupo de botones muy útiles que cambian la forma de presentar los espacios de trabajo para usarlos más cómodamente.</p>
 <h2 id="el-área-de-trabajo">El área de trabajo</h2>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_areatrabajo.png" alt="Ubicación del área de trabajo" /><p class="caption">Ubicación del área de trabajo</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_areatrabajo.png" title="Ubicación del área de trabajo" />
 </div>
 <p>La parte principal de nuestro entorno está ocupada por el área de trabajo.</p>
 <p>Normalmente ahí estaremos haciendo nuestro programa, por lo que también se llama &quot;área de programas&quot;. Sin embargo, podemos ver que hay tres pestañas justo sobre este área, que permiten cambiar entre tres espacios de trabajo distintos para distintas tareas: &quot;programas&quot; (que es la que se muestra por defecto y la que más usaremos), &quot;disfraces&quot; y &quot;sonidos&quot;.</p>
@@ -44,7 +452,7 @@
 <p>Cada objeto puede tener uno o más programas que indiquen cosas como su movimiento, lo que hace, etc; con este selector elegimos con cuál de los objetos estamos trabajando.</p>
 <h2 id="el-escenario">El escenario</h2>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_areaescenario.png" alt="Ubicación del escenario" /><p class="caption">Ubicación del escenario</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_areaescenario.png" title="Ubicación del escenario" />
 </div>
 <p>El escenario es donde todo ocurre.</p>
 <p>Todo lo que hagamos, todo aquello que ordenemos a nuestro programa, lo hará aquí.</p>
@@ -53,24 +461,24 @@
 <h2 id="bloques">Bloques</h2>
 <p>Otro par de áreas muy importantes son la paleta de bloques y el selector de grupos de bloques.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_bloquespaleta.png" alt="Paleta de bloques" /><p class="caption">Paleta de bloques</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_bloquespaleta.png" title="Paleta de bloques" />
 </div>
 <p>La paleta de bloques contiene las piezas (bloques) que usaremos para crear un programa. Cada una de estas piezas hace una tarea básica, y varias de ellas juntas conforman un programa. Puede verse que estos bloques imitan el aspecto de piezas de puzzle.</p>
 <p>La verdad es que, fácilmente, puede suponerse de un modo intuitivo cómo vamos a usar los bloques.</p>
 <p>Como veremos más adelante, para hacerlo sólo debemos tomar la pieza que necesitamos en un momento dado, arrastrarla con el ratón a nuestro área de trabajo, y unirla a las que ya tenemos allí como si de un puzzle se tratara. También iremos viendo cómo cada tipo de bloque (pieza) tiene una forma distinta, que le permite encajar sólo con las piezas con las que sea lógicamente compatibles.</p>
 <p>Dado que hay muchas más piezas de las que se pueden mostrar al mismo tiempo de una forma cómoda, se han agrupado en clases (grupos) según el tipo de uso que tengan, y cada uno de estos grupos puede verse sobre la paleta de bloques, en el área de selección de grupos de bloques.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_bloquesgrupo.png" alt="Selector de grupos de bloques" /><p class="caption">Selector de grupos de bloques</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_bloquesgrupo.png" title="Selector de grupos de bloques" />
 </div>
 <p>Haciendo click en cada uno de esos grupos, los bloques mostrados en la paleta de bloques cambian a los de ese grupo, y así podemos escoger el que nos interese en cada momento.</p>
 <h2 id="objetos-personales">Objetos personales</h2>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_objetospersonales.png" alt="Objetos personales" /><p class="caption">Objetos personales</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_objetospersonales.png" title="Objetos personales" />
 </div>
 <p>Abajo a la derecha está el área de objetos personales. Aquí podemos crear, seleccionar y manipular nuestros propios personajes y elementos para usarlo en nuestros juego y animaciones. También podemos seleccionar objetos que ya hayamos creado (y guardado) antes, o incluso elegirlo de una selección que el propio juego trae consigo.</p>
 <p>A efectos prácticos, para Scratch un &quot;objeto&quot; no es más que un dibujo al que luego le podremos añadir programas para que actúe de cierta forma. De este modo el creador de objetos, al que se accede pulsando el primero de lo iconos de este área (la estrella con un pincel), no es mas que un programa de dibujo muy simple, pero muy completo.</p>
 <div class="figure">
-<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_bloquesgrupo.png" alt="Editor de objetos" /><p class="caption">Editor de objetos</p>
+<img src="http://campusvirtual.ugr.es/moodle/file.php/2142/img/Tema1_primerospasos_bloquesgrupo.png" title="Editor de objetos" />
 </div>
 <p>El editor de objetos es en sí mismo un juego, y resulta una herramienta muy intuitiva y divertida. permite dibujar a &quot;mano alzada&quot; o usar varias herramientas básicas comunes a este tipo de programas.</p>
 <p>A pesar de que su uso es, como decimos, muy intuitivo, es recomendable dedicar algún tiempo a explorar esta herramienta y dibujar con ella. Una vez que hayamos dibujado nuestro objeto y estemos satisfechos con el resultado, no tenemos más que darle al botón &quot;Aceptar&quot; y ya habremos creado nuestro primer objeto.</p>

@@ -1,8 +1,8 @@
 # Orientación docente
-- - -
 
 ## Conceptos
 Esto son algunos conceptos que se pueden explorar con las herramientas vistas en este bloque:
+
 * Elaboración de una narrativa.
 * Causalidad.
 * Expresividad.

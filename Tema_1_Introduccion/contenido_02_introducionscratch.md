@@ -58,7 +58,6 @@ Este curso está, naturalmente, centrado en el conocimiento de la herramienta en
 
 ## Referencias para el docente
 Algunas referencias, ejemplos y ayudas sobre cómo usar Scratch para la docencia y por qué hacerlo:
-[](http:// "")
 
 Se puede encontrar una descripción de las habilidades que Scratch ayuda a desarrollar en la página web de XXI [Century Skills](http://campusvirtual.ugr.es/moodle/mod/resource/www.21stcenturyskills.org/downloads/P21_Report.pdf "Century Skills") (en Inglés). Hay una traducción al español de este mismo documento en la [web de Eduteka](http://www.eduteka.org/ScratchSigloXXI.php "Eduteka").
 
@@ -71,4 +70,5 @@ Hay una buen selección de artículos sobre [Habilidiades para el Siglo XXI](htt
 ## Reading, Writing and Programamming
 Reading, Writing, and Programming: Vídeo con la charla de Mitch Resnick (Director del Lifelong Kindergarten group en el MIT Media Lab) en la TEDx Beacon Street (Inglés).
 
-<iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/watch?v=42_30Rgf6F0"></iframe>
+* Referencia en [youTube](https://www.youtube.com/watch?v=42_30Rgf6F0 "Vídeo en Youtube")
+<iframe width="560" height="315" frameborder="0" src=""></iframe>

@@ -36,6 +36,6 @@ Scratch, sin embargo, sigue una filosofía distinta. Como veremos más adelante,
 
 El mismo programa anterior, pero hecho en Scratch, tendría el siguiente aspecto:
 
-![Ejemplo](../img/Tema1_programas_programacion.png)
+![](../img/Tema1_programas_programacion.png "Ejemplo")
 
 Como se puede ver es **gráfico**, es **simple** y es **intuitivo**. Esta es la herramienta que vamos a aprender a usar en este curso.

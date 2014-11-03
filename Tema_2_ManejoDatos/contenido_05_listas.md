@@ -14,7 +14,7 @@ Para crear una lista se recurre al grupo de bloques "Variables" (el mismo que us
 
 Al hacerlo se nos mostrará un cuadro de diálogo en el que podemos indicar el nombre de la lista y, al igual que vimos en el caso de las variables, si se circunscribe al objeto o a todo el programa.
 
-![Creando una lista llamada ](../img/Tema2_listas_crear.png)
+![](../img/Tema2_listas_crear.png "Creando una lista llamada ")
 
 Si quisiéramos borrar la lista, sólo tendríamos que usar el botón "Borrar una lista" del mismo modo que vimos con las variables.
 
@@ -25,40 +25,40 @@ Las listas se manipulan del mismo modo que las variables, añadiendo la compleji
 
 Añadir un elemento. El nuevo elemento se colocará al final de la lista, después del último que hubiera en ella. En la caja de texto (donde pone "cosa" por defecto) se escribe el contenido que se quiera que tenga el elemento añadido:
 
-![Añadir elementos](../img/Tema2_listas_aniadir.png)
+![](../img/Tema2_listas_aniadir.png "Añadir elementos")
 
 Borrar un elemento de una posición determinada. Se puede elegir el principio den la lista, el final o una posición concreta indicada por su número (por defecto, viene marcado 1):
 
-![Borrar](../img/Tema2_listas_borrar.png)
+![](../img/Tema2_listas_borrar.png "Borrar")
 
 Del mismo modo, se puede insertar un elemento de una posición determinada. También se puede elegir el principio den la lista, el final o una posición concreta indicada por su número (que, por defecto, también viene marcado el 1). Al insertar un elemento en una posición, el que hubiera en ella lugar pasa a la posición siguiente, del mismo modo que todos los que le siguieran:
 
-![Insertar](../img/Tema2_listas_insertar.png)
+![](../img/Tema2_listas_insertar.png "Insertar")
 
 Y, por último, también se puede reemplazar un elemento de la lista, cambiando su valor anterior por otro nuevo:
 
-![Reemplazar](../img/Tema2_listas_reemplazar.png)
+![](../img/Tema2_listas_reemplazar.png "Reemplazar")
 
 Como pequeño ejercicio de cómo funcionan estas cosas juntas, con lo que sabemos ya deberíamos poder ver qué hace este programa de ejemplo:
 
-![Ejemplo de manipulación de listas](../img/Tema2_listas_ejemplo.png)
+![](../img/Tema2_listas_ejemplo.png "Ejemplo de manipulación de listas")
 
 ##Acceso a elementos y existencia de elementos
 Se puede acceder a los datos de las listas de un modo bastante parecido a como hemos visto para las variables y otros tipos de dato.
 
 Para empezar, al crear una lista se crea un bloque con el mismo nombre que esa lista ("MiLista", en nuestro ejemplo). Se trata de una variable que contiene la lista completa de todos sus elementos, por su orden y separados por espacios en blanco.
 
-![Mi listas](../img/Tema2_listas_milista.png)
+![](../img/Tema2_listas_milista.png "Mi listas")
 
 También podemos acceder a un elemento concreto a través de su posición en la lista, por medio del bloque "item".
 
-![item](../img/Tema2_listas_item.png)
+![](../img/Tema2_listas_item.png "item")
 
 Y, por último, podemos averiguar cuántos elementos contiene la lista con "longitud", que nos retornará el número de items de esta.
 
-![Longitud](../img/Tema2_listas_longitud.png)
+![](../img/Tema2_listas_longitud.png "Longitud")
  
 Además de estos bloques, tenemos un bloque lógico (que, como recordaremos, nos retorna un valor de "cierto" o "falso") que nos sirve para averiguar si en una lista existe un determinad elemento:
 
-![Contiene](../img/Tema2_listas_contiene.png)
+![](../img/Tema2_listas_contiene.png "Contiene")
  

@@ -7,14 +7,14 @@ Cuando programamos en Scratch uno de los pilares básicos es el control de los o
 Es de los apartados más importantes ya que aquí definiremos el momento en que se tienen que ejecutar las acciones, podemos controlar condiciones para que se ejecuten otras acciones o también podemos controlar la parada de los programas.
 
 
-![Introducción](../img/Tema3_control_introduccion.png)
+![](../img/Tema3_control_introduccion.png "Introducción")
 
 ## Piezas
 Este bloque de Scratch es el bloque donde tenemos todas las directivas para poder controlar los objetos de nuestro programa.
 Así entonces las podemos agrupar en los siguientes apartados:
 
 ### Al presionar...
-![Al presionar](../img/Tema3_control_alpresionar.png)
+![](../img/Tema3_control_alpresionar.png "Al presionar")
 
 Hay 3 directivas de este tipo como se puede ver en la imagen, el significado de cada una es:
 
@@ -27,19 +27,21 @@ Cuando presionemos la tecla que esté indicada en el recuadro que aparece junto 
 * **Al presionar el objeto** <br>
 Cuando hagamos click sobre el objeto que indica esta pieza se ejecutará lo que englobemos en esta pieza.
 
-![Ejemplo presionar](../img/Tema3_control_alpresionar_ejemplo.png)
+![](../img/Tema3_control_alpresionar_ejemplo.png "Ejemplo presionar")
 
 ### Condiciones de espera
-![Condiciones de espera](../img/Tema3_control_condicionespera.png)
+
+![](../img/Tema3_control_condicionespera.png "Condiciones de espera")
 
 Con estas piezas conseguiremos pausar la ejecución de un bloque de directrices un tiempo especificado (la pieza de la izquierda de la imagen) o bien se pausará la ejecución hasta que no se cumpla una condición.
 
 La segunda pieza nos puede servir por ejemplo para reanudar la ejecución de un objeto cuando una variable que hayamos especificado tome un valor determinado.
 
-![Ejemplo](../img/Tema3_control_condicionespera_ejemplo.png)
+![](../img/Tema3_control_condicionespera_ejemplo.png "Ejemplo")
 
 ### Repetición de acciones
-![Bucles](../img/Tema3_control_bucles.png)
+
+![](../img/Tema3_control_bucles.png "Bucles")
 
 Estas piezas son piezas que se usan muy pero que muy a menudo, sirven para repetir una serie de acciones (lo que se llaman bucles) según se den ciertas condiciones o de forma indefinida. Así veamos que significan estas 4 piezas:
 
@@ -55,12 +57,13 @@ Si queremos que algo se repita un número de veces determinado esta es nuestra p
 * **Repetir hasta que < >** <br>
 Esta pieza es parecida a la de "Por siempre si..." ya que repetirá las acciones hasta que no se cumpla la condición que indiquemos en el hexágono.
 
-![Ejemplo bucles](../img/Tema3_control_bucles_ejemplo.png)
+![](../img/Tema3_control_bucles_ejemplo.png "Ejemplo de bucles")
 
 Como nota extra para este apartado, podemos ver que de estas 4 piezas hay dos (Por siempre y Por siempre si<>) a las que no les podemos añadir ninguna otra pieza a continuación de ellas, esto se debe a la lógica de la pieza, ya que si indicamos que se repitan una serie de acciones por siempre, estamos diciendo que sea de forma indefinida a menos que paremos el programa, así que tendremos que tenerlo en cuenta.
 
 ### Ejecutar acciones según condiciones
-![Condiciones](../img/Tema3_control_condicionales.png)
+
+![](../img/Tema3_control_condicionales.png "Condiciones")
 
 En el desarrolo de un programa es bastante normal que se tengan que ejecutar ciertas acciones si se da una condición o ejecutar otras si no se da.
 
@@ -74,10 +77,11 @@ Es igual que la pieza anterior salvo que podemos incluir otras acciones si no se
 
 Estas dos piezas las podemos ir anidando como sea conveniente, un ejemplo sencillo es mostrar un mensaje dependiendo del valor de una variable:
 
-![Ejemplo de condiciones](../img/Tema3_control_condicionales_ejemplo.png)
+![](../img/Tema3_control_condicionales_ejemplo.png "Ejemplo de condiciones")
 
 ### Enviar y recibir mensajes
-![Mensajes](../img/Tema3_control_mensajes.png)
+
+![](../img/Tema3_control_mensajes.png "Mensajes")
 
 Los mensajes nos sirven para establecer digamos una comunicación entre los objetos, veamos que significan las piezas:
 
@@ -88,14 +92,15 @@ Nos sirve igual que el anterior solo que cuando se envía el mensaje el objeto s
 * **Al recibir []** <br>
 Cuando enviamos un mensaje este lo tenemos que procesar en algún objeto, pues esta pieza nos sirve para eso, para ejecutar acciones cuando se recibe un mensaje.
 
-![Ejemplo de mensajes](../img/Tema3_control_mensajes_ejemplo.png)
+![](../img/Tema3_control_mensajes_ejemplo.png "Ejemplo de mensajes")
 
 En este ejemplo de un sólo objeto enviamos el mensaje "mensaje" y se procesa en el mismo objeto, pero lo podemos expandir a más objetos con diferentes mensajes a enviar.
 
 ### Detención
-![Detencion](../img/Tema3_control_detencion.png)
+![](../img/Tema3_control_detencion.png "Detencion")
 
 Tenemos dos piezas de detención:
+
 * **Detener programa** <br>
 Con esta pieza tenemos un programa de un objeto ya que a cada objeto le podemos asignar varios programas.
 
@@ -105,11 +110,11 @@ Esta para la ejecución de todos los programas de todos los objetos.
 ## Anotaciones
 Fijaos que hay 3 tipos de piezas que podemos diferenciar por la estructura de su dibujo, dicho en otras palabras, hay piezas a las que podemos ponerle una pieza a continuación, las piezas que sólo admiten una (o una serie) de piezas por encima de ella y las que aceptan piezas tanto por encima como por debajo.
 
-![Tipos de piezas](../img/Tema3_control_tipospiezas.png)
+![](../img/Tema3_control_tipospiezas.png "Tipos de piezas")
 
 Es decir, las que sólo admiten una o más piezas por debajo son para iniciar un proceso. Luego tenemos las piezas antagónicas que son para indicar donde acaba un proceso. Y el resto de piezas, aunque podemos decir que hay otro tipo más que es una mezcla de una pieza normal con una pieza "terminadora", que es la que podemos ver en la imagen anterior a la derecha, que hace un proceso repetitivo pero después de este proceso ya no podemos continuar el programa, veamos un ejemplo de como podemos usar estas piezas:
 
-![Tipos de piezas](../img/Tema3_control_anotaciones_ejemplo.png)
+![](../img/Tema3_control_anotaciones_ejemplo.png "Tipos de piezas")
 
 Ambos procesos que se ven, hacen exactamente lo mismo, mover a Scratch hasta que toca un borde del escenario, salvo que el proceso de la derecha en la práctica nunca para, haced un programa copiando estas piezas y ejecutad ambos procesos (primero el izquierdo y luego el derecho) veréis como con el proceso derecho Scratch para de andar pero si lo movemos a otra parte vuelve a andar, y la única manera de parar el proceso es dándole al botón de Stop que tenemos al lado de la bandera verde.
 

@@ -28,7 +28,7 @@ done
 
 sed -i '1{
     h
-    r ../include.css
+    r ../script/include.css
     D
 }
 2{

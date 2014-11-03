@@ -13,25 +13,25 @@ En el selector de bloques (arriba a la izquierda) seleccionamos "Control". Al ha
 
 Nosotros elegiremos "Al presionar tecla ---". Sólo tenemos que hacer click con el ratón sobre esa pieza y arrastrarla a nuestro área de trabajo.
 
-![Nuestro primer programa 1](../img/Tema1_primerprograma_01.png)
+![](../img/Tema1_primerprograma_01.png "Nuestro primer programa 1")
 
 Por defecto viene indicada la tecla "espacio". Se puede elegir otra haciendo click encima pero, por ahora, vamos a dejar esta. De este modo, indicamos a Scratch que las instrucciones que coloquemos a continuación deben ejecutarse cuando se pulse esta tecla.
 
 Después elegiremos el grupo de bloques "Apariencia", que nos mostrará una serie de piezas que sirven para indicar cómo se visualizan distintas cosas en pantalla. De aquí cogeremos el bloque "Decir --- por - Segundos". Arrastraremos esta pieza y la colocaremos justo debajo de la anterior (se puede ver cómo se "pega" a ella, encajando perfectamente.
 
-![Nuestro primer programa 2](../img/Tema1_primerprograma_02.png)
+![](../img/Tema1_primerprograma_02.png "Nuestro primer programa 2")
 
 Aquí podemos cambiar tanto el texto mostrado (dice "Hola" por defecto) como el tiempo durante el que se muestra (dos segundos, por defecto). Vamos a cambiar el texto, haciendo click encima del que hay, y poner "Hola mundo". El tiempo lo dejaremos como está.
 
 Después, volvemos a seleccionar el grupo de bloques "Control", donde elegimos "finalizar programa" y lo agregamos tras la instrucción anterior. Como en el caso anterior, esta pieza encajará como un puzzle con la inmediatamente superior.
 
-![Nuestro primer programa 3](../img/Tema1_primerprograma_03.png)
+![](../img/Tema1_primerprograma_03.png "Nuestro primer programa 3")
 
 Para probar nuestro programa sólo tenemos que pulsar la banderita verde que hay en el escenario (arriba a la izquierda). Una vez hecho esto, probaremos a pulsar la barra espaciadora (que es la que hemos indicado en nuestro programa) para ver lo que hace.
 
 Si hemos hecho todo bien, Scratch saludará al mundo.
 
-![Nuestro primer programa 4](../img/Tema1_primerprograma_04.png)
+![](../img/Tema1_primerprograma_04.png "Nuestro primer programa 4")
 
 Enhorabuena!! Hemos hecho nuestro primer programa.
 

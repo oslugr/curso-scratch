@@ -1,8 +1,8 @@
 # Orientación docente
-- - -
 
 ## Conceptos
 Esto son algunos conceptos que se pueden explorar con las herramientas vistas en este bloque:
+
 * Pensamiento abstracto.
 * Concepto de variable.
 * Lógica booleana elemental, operaciones aritméticas.

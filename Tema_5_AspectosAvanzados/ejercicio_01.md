@@ -1,10 +1,14 @@
 # Ejercicio - Olimpiada matemática
 
 ## Explicación
-Deberás realizar un videojuego interactivo, usando un personaje que hará una serie de preguntas (diálogos) simulando un concurso matemático. La estructura es la siguiente:
-El personaje te hará (como mínimo) 10 preguntas matemáticas (operaciones básicas +,-*,/) y el alumno tendrá que responder.
-Cada acierto añadirá 1 punto y cada fallo restará 1 punto (se usará una variable mínimo para la puntuación)
-Al final de las preguntas se mostrará un mensaje con una de las piezas que hay en el grupo de apariencia, la puntuación obtenida.
+Deberás realizar un videojuego interactivo, usando un personaje que hará una serie de preguntas (diálogos) simulando un concurso matemático.
+
+La estructura es la siguiente:
+
+* El personaje te hará (como mínimo) 10 preguntas matemáticas (operaciones básicas +,-*,/) y el alumno tendrá que responder.
+* Cada acierto añadirá 1 punto y cada fallo restará 1 punto (se usará una variable mínimo para la puntuación)
+* Al final de las preguntas se mostrará un mensaje con una de las piezas que hay en el grupo de apariencia, la puntuación obtenida.
+ 
 Se valorará la creatividad y originalidad, así como los contenidos.
 
 ## Formato de entrega
