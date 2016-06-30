@@ -6,7 +6,7 @@ Scratch es gratuito, y puede descargarse desde la propia página que el MIT tien
 
 ![](../img/Tema1_instalacion_introduccion.png "Ejemplo")
 
-Como se puede ver, en esa página hay versiones para instalar en los sistemas operativos más conocidos, como son Windows, Mac OS X, Ubuntu y Debian.
+Como se puede ver, en esa página hay versiones para instalar en los sistemas operativos más conocidos, como son Windows, Mac OS X, GNU/Linux.
 
 **NOTA**: En caso de que no se muestre la página en español desde un principio, es posible seleccionar el idioma en la lista que aparece a la derecha.
 
@@ -64,9 +64,9 @@ Una vez descargado y al hacer doble click sobre el icono, se mostrara una nueva 
 Abriendo esa unidad se encuentra el instalador propiamente dicho, que sólo hay que ejecutar para que se instale en nuestro sistema. 
 
 ## Instalación en GNU/Linux
-El procedimiento para instalar Scratch en Linux es muy simple, pero varía ligeramente dependiendo de la distribución concreta de que se trate:
+El procedimiento para instalar Scratch en GNU/Linux es muy simple, pero varía ligeramente dependiendo de la distribución concreta de que se trate:
 
-En sistemas como Debian o Ubuntu es fácil hacerlo por medio del instalador gráfico (depende de la versión exacta, pero es la aplicación llamada "centro de software", "agregar software", o algo parecido). En Debian, por ejemplo, el aspecto que tiene es este:
+En distribuciones como Debian o Ubuntu es fácil hacerlo por medio del instalador gráfico (depende de la versión exacta, pero es la aplicación llamada "centro de software", "agregar software", o algo parecido). En Debian, por ejemplo, el aspecto que tiene es este:
 
 ![](../img/Tema1_instalacion_linux.png "Insatalación en linux")
 
