@@ -12,9 +12,9 @@ Como se puede ver, en esa página hay versiones para instalar en los sistemas op
 
 Naturalmente, para poder instalar Scratch en nuestro ordenador debemos descargar la versión correspondiente al sistema operativo que estemos usando.
 
-**NOTA**: En el caso de sistemas Linux como Ubuntu o Debian, este paso no es necesario, ya que resulta mucho más cómodo, en lugar de descargar la aplicación, usar nuestro gestor de paquetes favorito y, de este modo, instalarlo como se suele hacer con el resto de aplicaciones de estos sistemas.
+**NOTA**: En el caso del sistema operativo GNU/Linux y distribuciones como Ubuntu o Debian, este paso no es necesario, ya que resulta mucho más cómodo, en lugar de descargar la aplicación, usar nuestro gestor de paquetes favorito y, de este modo, instalarlo como se suele hacer con el resto de aplicaciones de estos sistemas.
 
-**NOTA**: Hay dos versiones actualmente de Scratch, optamos por usar para el curso la versión 1.4 ya que es una versión estable. Si decides usar la nueva versión de Scratch la interfaz cambia, tenlo en cuenta ya que hay secciones que se llaman de forma distinta o se acceden de otra forma.
+**NOTA**: Hay dos versiones actualmente de Scratch, optamos por usar para el curso la versión 1.4 ya que es una versión estable. Si decides usar la nueva versión de Scratch2 la interfaz cambia, tenlo en cuenta ya que hay secciones que se llaman de forma distinta o se acceden de otra forma.
 
 ## Instalación en Windows
 Como hemos visto, el primer paso es descargar la versión para Windows desde la página oficial de descarga.
@@ -76,8 +76,9 @@ También se puede instalar en modo de texto, que resulta algo menos estético pe
 
 ```
 sudo aptitude install scratch
+sudo apt-get install scratch
 ```
 
-El sistema pedirá nuestra contraseña y, cuando se la demos, buscará el programa y todo lo necesario para instalarlo, nos pedirá confirmación (sólo hay que pulsar "intro" para aceptar) y pasará a instalarlo.
+El sistema (distribución Ubuntu o Debian) pedirá nuestra contraseña y, cuando se la demos, buscará el programa y todo lo necesario para instalarlo (dependencias), nos pedirá confirmación (sólo hay que pulsar "intro" para aceptar) y pasará a instalarlo.
 
 Sea cual sea el método que hayamos usado, ya tendremos el programa instalado, y podemos pasar a ver su uso.
